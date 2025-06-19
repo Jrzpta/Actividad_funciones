@@ -21,26 +21,25 @@ print("2- Mostrar contactos")
 print("3- Buscar contactos")
 print("4- Eliminar contactos")
 print("4- Salir del programa")
+
+contactos = []
+
 while True:
     try:
         opcion = int(input("Ingresa una opcion \n"))
     except:
         print("Ingrese un valor numerico")
     if opcion == 1:
-            nombre = ""
-            numero = 0
-            email = ""
-            while len(nombre) <= 0 and len(email) <= 0 :
-                input("Ingrese su nombre \n")
-                input("Ingrese su email \n")
-            try:
-                int(input("Ingrese su numero telefonico \n"))
-            except:
-                print("Debe ingresar valor numerico \n")
-    # elif opcion == 2:
-    # elif opcion == 3:
-    # elif opcion == 4:
-    # elif opcion == 5:                
+        nombre = ""
+        
+        agregar_nombre(contactos)
+    elif opcion == 2:
+        mostrar_nombre(contactos)
+    elif opcion == 3:
+        buscar_contacto(contactos)
+    elif opcion == 4:
+        
+    elif opcion == 5:                
                
             
         
